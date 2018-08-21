@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт портфолио - Webcademy.ru</title>
+    
+    <!--  Инструкция для IE  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--  Отображать страницу в масштабе 100%  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Нормализация стилей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    
+    <!-- Собственные стили -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!--  Подключение веб-шрифтов  -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Подключаем Animate.css -->
+    <link rel="stylesheet" href="libs/animate/animate.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon-16x16.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Play|Press+Start+2P|Russo+One&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?150"></script>
+    
+</head>
+<body>
+    
+
+<!-- ...................................... 
+
+HEADER
+
+...................................... -->
+<div class="header">
+    <img class="header__smile wow flash" src="img/keyboard_alt_white_72x72.png">
+    <div class="header__title wow bounceInDown">Корняков Никита</div>
+    <div class="header__slogan wow flipInY">Верстка сайтов на HTML и CSS<br> HTML5 CSS3 JS jQuery</div>
+    <div class="header__arrow wow flip">
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+</div>   
+    
+
+    
+    
+<!-- ...................................... 
+
+PORTFOLIO
+
+...................................... -->
+<div class="portfolio">
+    <div class="container">
+    
+    <div class="title wow bounceIn">
+        Портфолио
+    </div>
+        
+    <div class="row">
+        
+        <!-- Работа в портфолио -->
+        <div class="col-4 wow rotateInDownLeft">
+            <a href="myfirstsite.html" class="portfolio-item">
+                <div class="portfolio-item__img">
+                    <img src="img/fotosite.jpg" alt="Первый сайт">
+                </div>
+                <div class="portfolio-item__title">Мой первый сайт</div>
+                <div class="portfolio-item__text">Верстка одностраничного сайта по PSD макету.</div>
+            </a>
+        </div>
+        <div class="col-4 wow rotateInDownLeft">
+            <a href="mandarin.html" class="portfolio-item">
+                <div class="portfolio-item__img">
+                    <img src="img/mandarinrez.jpg" alt="Второй сайт">
+                </div>
+                <div class="portfolio-item__title">Второй сайт</div>
+                <div class="portfolio-item__text">Верстка одностраничного сайта по PSD макету.</div>
+            </a>
+        </div>
+    </div>
+    </div>
+</div>
+    
+    
+    
+      
+<!-- ...................................... 
+
+FOOTER
+
+...................................... -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 wow slideInUp">
+                <p class="footer__name">Корняков Никита</p>
+                <p class="footer__slogan">HTML верстка и разработка сайтов</p>
+            </div>
+            <div class="col-4 wow slideInUp">
+                <p class="footer__social">Мои профили в социальных сетях:</p>
+                <p class="footer__social-icons">
+                   
+                    <a href="https://vk.com/nikornyakov" target="_blank">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/nikornyakov" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/nikornyakov/" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+
+                </p>
+
+            </div>
+
+            <!-- Link to open the modal -->
+            <div class="button__phone wow fadeIn">
+                <a href="#ex1" rel="modal:open" class="button open-modal">Позвонить мне</a>
+            </div>
+
+            <!-- Modal HTML embedded directly into document -->
+            <div id="ex1" class="modal animated pulse">
+                <form action="php/callback.php" class="contact_form contact_form--modal" method="POST">
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Сайт Student">
+                    <input type="hidden" name="admin_email" value="nicorne1ius@yandex.ru">
+                    <input type="hidden" name="form_subject" value="Обратный звонок с сайта">
+                    <!-- END Hidden Required Fields -->
+
+                    <h2 class="application">Заполните заявку</h2>
+                    <div class="subtitle">И я свяжусь с вами</div>
+
+                    <label class="label" for="f_name">Имя:</label>
+                    <input type="text" id="f_name" name="Имя" placeholder="">
+
+                    <label class="label" for="f_phone">Номер телефона:</label>
+                    <input type="text" id="f_phone" name="Телефон" placeholder="">
+
+                    <input class="submit" type="submit" value="Отправить заявку">
+
+                </form>
+            </div>
+
+            <div class="col-4 wow fadeIn">
+                <div><a href="https://vk.com/nikornyakov" class="button" target="_blank">связаться Вконтакте</a></div>
+                <p class="footer__comments">Свяжитесь со мной, чтобы заказать или узнать стоимость верстки вашего проекта</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="libs/wow/wow.min.js"></script>
+
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+<script src="js/js.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46921917 = new Ya.Metrika({
+                    id:46921917,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46921917" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+<!-- VK Widget -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+    VK.Widgets.CommunityMessages("vk_community_messages", 158105707, {widgetPosition: "left",disableExpandChatSound: "1",tooltipButtonText: "Есть вопрос?"});
+</script>
+
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = '7mBQDqzcbWzt8i63z';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+            + '//call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+</body>
+</html>
